@@ -10,7 +10,7 @@ export const makeHermesFetch = (
   middlewares?: FetchMiddleware[],
 ) => {
   const normalizedBaseUrl = baseUrl ? normalizeBaseUrl(baseUrl) : '';
-  const requestsStack = new Stack<HermesRequest>(10);
+  const requestsStack = new Stack<HermesRequest>();
 
   const hermesFetch = async <ResponseType>(
     input: string | URL | Request,
