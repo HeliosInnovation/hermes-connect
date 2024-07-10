@@ -1,0 +1,27 @@
+{
+  "name": "hermes-connect",
+  "author": "Helios Innovation",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint 'src/**/*.{js,ts}'",
+    "test": "cypress open",
+    "prepare": "husky",
+    "lint:fix": "eslint 'src/**/*.{js,ts}' --fix"
+  },
+  "keywords": [
+    "fetch",
+    "http client"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@fullstacksjs/eslint-config": "^10.11.1",
+    "cypress": "^13.13.0",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "prettier": "^3.3.2",
+    "typescript": "^5.5.3"
+  }
+}
