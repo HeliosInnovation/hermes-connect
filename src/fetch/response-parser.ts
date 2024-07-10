@@ -1,4 +1,6 @@
-export const responseParser = async <ResponseType>(response: Response) => {
+export const responseParser = async <ResponseType>(
+  response: Response,
+): Promise<ResponseType> => {
   const { headers } = response;
   const contentType = headers.get('content-type');
 
