@@ -11,7 +11,7 @@ export class Stack<T> {
     return this._stack.pop();
   }
 
-  public top() {
+  public top(): T | undefined {
     return this._stack[this._stack.length - 1];
   }
 

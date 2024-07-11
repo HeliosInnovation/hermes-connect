@@ -3,4 +3,4 @@ import { httpErrors } from './http';
 
 const errors = { ...httpErrors, ...generalErrors };
 
-export default errors as Record<string | number, string>;
+export default errors as Record<number | string, string>;

@@ -1,8 +1,11 @@
-const { init } = require('@fullstacksjs/eslint-config/init')
+const { init } = require('@fullstacksjs/eslint-config/init');
 
 module.exports = init({
-    modules: {
-        auto: true,
-        prettier: true,
+  modules: {
+    auto: true,
+    typescript: {
+      parserProject: './tsconfig.eslint.json',
     },
-})
+    prettier: true,
+  },
+});

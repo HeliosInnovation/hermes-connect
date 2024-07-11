@@ -8,11 +8,11 @@ import errors from '../errors';
 const generateErrorMessage = (response: Response) => {
   const { status } = response;
 
-  if (Object.keys(errors)) {
+  if (status in errors) {
     return errors[status];
   }
 
-  return `${status}` ?? errors.UNKNOWN;
+  return status ? `${status}` : errors.UNKNOWN;
 };
 
 /**
