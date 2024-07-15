@@ -1,8 +1,8 @@
 export const normalizePath = (path: string): string => {
   const hasProtocol = /^(http:\/\/|https:\/\/)/.test(path);
 
-  if (!hasProtocol && path[0] !== '/') {
-    path = '/' + path;
+  if (!hasProtocol && !path.startsWith('/')) {
+    path = `/${path}`;
   }
 
   // Remove trailing /

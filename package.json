@@ -15,7 +15,7 @@
     "fetch",
     "http client"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@fullstacksjs/eslint-config": "^10.11.1",
     "cypress": "^13.13.0",
